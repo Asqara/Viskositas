@@ -19,6 +19,6 @@ document.getElementById('calcForm').addEventListener('submit', function(event) {
     let akar = Math.sqrt(Math.pow((2 * R / V), 2) * Math.pow((2/3 * delt_r), 2) + Math.pow((Math.pow(R, 2) / Math.pow(V, 2)), 2) * Math.pow(delt_v / 100, 2));
     let delta_n = (2 / 9) * (pB - pCairan) * g * akar;
 
-    document.getElementById('result').textContent = `Viskositas: ${viskositas.toFixed(3)}`;
-    document.getElementById('errorResult').textContent = `Kesalahan Ukur: ${delta_n.toFixed(3)}`;
+    document.getElementById('result').textContent = `Viskositas: ${viskositas.toFixed(3)} Pa.s`;
+    document.getElementById('errorResult').textContent = `Kesalahan Ukur: ${delta_n.toFixed(3)} Pa.s`;
 });
